@@ -1,38 +1,33 @@
 # Type Hints
 
 
-Éttore Leandro Tognoli
+Éttore Leandro Tognoli - ettore.leandro.tognoli@gmail.com
 
 ---
 
 # Éttore Leandro Tognoli
 
-Mestre UFSCar
+## Formação 
 
-Pesquisador CIAg
+Bacharelado em Ciência da Computação -  UNIVEM
 
-Prof. Fatec
+Mestrado em Ciência da Computação -  UFSCar
 
----
+## Experiência
 
-# CIAg
+Programador/Desenvolvedor em algumas empresas em Marília
 
-Centro de Inovação no Agronegocio
-
----
-
-# FATEC
+Consultor e Freelancer
 
 
-```python
-def test(a,b):
-	return a + b
-	
-```
+Pesquisador CIAg *
+
+Prof. Fatec *
 
 ---
 
 # Minha Opinião
+
 
 Não estou aqui representando o CIAg ou a FATEC
 
@@ -41,19 +36,20 @@ Não estou aqui representando o CIAg ou a FATEC
 
 # Bibliografia
 
-- Clean Architecture
-- Clean Code
-- Clean Coder
-- Design Patterns
-- Domain Drive Design
+Clean Architecture - Robert C Martin
+Clean Code - Robert C Martin
+Clean Coder - Robert C Martin  ( Uncle Bob )
+Design Patterns - GoF
+Domain Drive Design - Eric Evans
+SCRUM A Arte de Fazer o Dobro do Trabalho na Metade do Tempo - Jeff Sutherland & J.J. Sutherland
+A Startup Enxuta - Eric Ries
 
 ---
-
 # Publico alvo
 
-O importante é estar funcionando! =(
+O importante é estar funcionando!? =(
 
-Algo que não está funcionando posso fazer funcionar, já algo que não consigo alterar não vai me atender para sempre.
+Algo que não está funcionando posso fazer funcionar, já algo que não consigo alterar não vai me atender para sempre. 
 
 ---
 
@@ -69,25 +65,165 @@ Tipagem contribui com a expressividade do código
 
 -----
 
-# Minha Motivação
+
+# Sobre o Tema
+
+"I found TypeScript is actually incredibly useful, so we're adding a similar idea to Python, we're adding it in a slightly different way because we have different context," he said.
+
+"...the TypeScript behavior he was talking about was optional type checking..."
 
 Guido van Rossum 16/04/2019
+
+
 
 https://www.techrepublic.com/article/the-creator-of-python-on-how-the-programming-language-is-learning-from-typescript/
 
 -----
 
+
+
 # Duck Types
 
+Tudo que faz "quack" é um pato!
 
 
 ---
 
-# Python Duck Types
+# Java 
+
+
+```java
+interface Duck {
+  void quack();
+}
+
+class DuckClient {
+  void consumeDuck(Duck duck) {
+    duck.quack();
+  }
+}
+
+class RubberDuck implements Duck {
+  @Override
+  void quack() { /*...*/ }
+}
+
+class FakeDuck {
+  void quack() { /*...*/ }
+}
+```
 
 ---
 
-# JavaScript Duck Types
+# Java =(
+
+
+```java
+DuckClient client = new DuckClient();
+client.consumeDuck(new RubberDuck()); // ok
+client.consumeDuck(new FakeDuck()); // error
+```
+
+---
+
+# Python 2
+
+```python
+class Duck:
+  def quack(self):
+    raise NotImplementedError()
+
+
+class DuckClient:
+  def cosumeDuck(self, duck):
+    duck.quack()
+
+class RubberDuck(Duck):
+  def quack(self):
+    pass
+
+class FakeDuck:
+  def quack(self):
+    pass
+```
+
+---
+
+# Python 2 =)
+
+```python
+client = DuckClient()
+client.consumeDuck(RubberDuck()) # ok
+client.consumeDuck(FakeDuck()) # ok!
+```
+
+---
+
+# TypeScript
+
+```typescript
+interface Duck {
+  quack: () => void
+}
+
+class DuckClient {
+  public consumeDuck(duck : Duck) {
+    duck.quack();
+  }
+}
+
+class RubberDuck implements Duck {
+  public quack() { /* ... */ }
+}
+
+class FakeDuck {
+  public quack() { /* ... */ }
+}
+```
+
+---
+
+# TypeScript =)
+
+```typescript
+const client = new DuckClient();
+client.quack(new RubberDuck()); // ok
+client.quack(new FakeDuck()); // ok!
+```
+---
+
+# PHP
+
+```php
+interface Duck {
+  function quack();
+}
+
+class DuckClient {
+  function consumeDuck( $duck ) {
+    $duck->quack();
+  }
+}
+
+class RubberDuck implements Duck {
+  function quack() { /* ... */ }
+}
+
+class FakeDuck {
+  function quack() { /* ... */ }
+}
+```
+
+---
+
+# PHP =)
+
+```
+$client = new DuckClient();
+$client->consumeDuck(new RubberDuck()); // ok
+$client->consumeDuck(new FakeDuck()); // ok
+```
+
 
 ---
 
@@ -95,19 +231,80 @@ https://www.techrepublic.com/article/the-creator-of-python-on-how-the-programmin
 
 ---
 
-# TypeScript
+# Python 3
+
+```python
+class Duck:
+  def quack(self):
+    raise NotImplementedError()
+
+
+class DuckClient:
+  def cosumeDuck(self, duck : Duck):
+    duck.quack()
+
+class RubberDuck(Duck):
+  def quack(self):
+    pass
+
+class FakeDuck:
+  def quack(self):
+    pass
+```
 
 ---
 
-# Python
+# Python 3 =)
+
+```python
+client = DuckClient()
+client.consumeDuck(RubberDuck()) # ok
+client.consumeDuck(FakeDuck()) # ok!
+```
+
 
 
 ---
 
-# PHP Duck Types
+# PHP & Interfaces
 
-As iterfaces do PHP não são duck types
+Existe uma verificação em tempo de execução
+- Custo em tempo de execução
+- Tchau duck types
 
+---
+
+# PHP
+
+```php
+interface Duck {
+  function quack();
+}
+
+class DuckClient {
+  function consumeDuck(Duck $duck ) {
+    $duck->quack();
+  }
+}
+
+class RubberDuck implements Duck {
+  function quack() { }
+}
+
+class FakeDuck {
+  function quack() { }
+}
+```
+
+---
+
+# PHP =(
+
+```
+$client = new DuckClient();
+$client->consumeDuck(new RubberDuck()); // ok
+$client->consumeDuck(new FakeDuck()); // error =O
+```
 ---
 
 # Meta Programação
