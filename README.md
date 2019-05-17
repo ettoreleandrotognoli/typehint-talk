@@ -80,11 +80,34 @@ https://www.techrepublic.com/article/the-creator-of-python-on-how-the-programmin
 
 -----
 
+# Tipagem
 
+Linguagens compiladas geralmente utilizam tipagem estatica e linguagens interpretadas geralmente utilizam tipagem dinamica.
 
-# Duck Types
+## C/C++
+```c
+int i = 1;
+```
 
-Tudo que faz "quack" é um pato!
+## Python
+```
+i = 1;
+```
+
+## TypeScript
+
+```
+const i : number = 1;
+```
+---
+
+# Duck Typing
+
+"If it walks like a duck and it quacks like a duck, then it must be a duck"
+
+O tipo do objeto não importa, mas sim a existência de certas propriedades
+
+Os exemplos a seguir consideram tudo que faz "quack" um "pato"
 
 
 ---
@@ -223,8 +246,6 @@ $client = new DuckClient();
 $client->consumeDuck(new RubberDuck()); // ok
 $client->consumeDuck(new FakeDuck()); // ok
 ```
-
-
 ---
 
 # TypeHint
@@ -261,8 +282,6 @@ client = DuckClient()
 client.consumeDuck(RubberDuck()) # ok
 client.consumeDuck(FakeDuck()) # ok!
 ```
-
-
 
 ---
 
