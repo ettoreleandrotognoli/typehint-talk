@@ -33,18 +33,12 @@ Não estou aqui representando o CIAg ou a FATEC
 # Bibliografia
 
 Clean Architecture - Robert C Martin
-
 Clean Code - Robert C Martin
-
 Clean Coder - Robert C Martin ( Uncle Bob )
-
 Design Patterns - GoF
-
 Domain Drive Design - Eric Evans
-
 SCRUM A Arte de Fazer o Dobro do Trabalho na Metade do Tempo - Jeff
 Sutherland & J.J. Sutherland
-
 A Startup Enxuta - Eric Ries
 
 ---
@@ -63,6 +57,8 @@ Startups Pivotam, logo são necessárias metodolias ageis
 
 - Refatoração Continua ( Tipagem facilita muito refatorações )
 - Legibilidade (Tipagem contribui com a expressividade do código )
+- Integração Continua ( CI )
+- Entregas Continuas ( CD )
 
 ---
 
@@ -254,6 +250,12 @@ $client->consumeDuck(new FakeDuck()); // ok
 
 # TypeHint
 
+Dicas sobre o tipo
+Tipagem Opcional
+
+
+[Mypy](http://mypy-lang.org/)
+
 ---
 
 # Python 3
@@ -408,10 +410,50 @@ Existem ORMs que não utilizam isso, Eloquent (Laravel)
 
 ---
 
+# Django ORM
+
+```python
+
+class Band(models.Model):
+    name = models.CharField(max_length=200)
+    can_rock = models.BooleanField(default=True)
+
+```
+
+Existe tipagem ( meta dados ) mas não são nativos da linguagem
+
+---
+
+# Injeção de Dependencia
+
+Muito comum no Java
+
+No PHP com Laravel também é muito utilizado
+
+Angular 1 com JS, demais com TypeScript
+
+E no python?
+
+---
+
+# Singleton
+
+Pattern ou Anti-Pattern?
+
+---
+
 
 # Meta Programação
 
 Injeção de Dependencia
+
+---
+
+# CI/CD
+
+Versionamento de Código
+TDD
+Gerenciamento de Dependencias
 
 ---
 
@@ -424,3 +466,11 @@ Python 3.7
 Pipenv
 
 - lockfile
+
+---
+
+# Para os Gerentes
+
+http://www.akitaonrails.com/2009/03/30/off-topic-net-negative-producing-programmer
+
+---
