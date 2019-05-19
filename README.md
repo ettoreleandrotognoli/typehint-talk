@@ -443,17 +443,35 @@ Pattern ou Anti-Pattern?
 ---
 
 
-# Meta Programação
+# Injeção de Dependencia
 
-Injeção de Dependencia
+
+---
+
+# Meta Programação
 
 ---
 
 # CI/CD
 
-Versionamento de Código
-TDD
-Gerenciamento de Dependencias
+## Versionamento de Código
+GIT, Mercurial, SVN , JEDI
+## Testes Automatizados
+TDD, JUnit, Selenium,
+## Gerenciamento de Dependencias
+Gradle, Maven, Coposer, NPM, Yarn, Pipenv, Cargo
+
+---
+
+# Ferramentas CI/CD
+
+Jenkins
+Gitlab Pipelines
+Travis CI
+
+Circle CI
+
+S2 Docker
 
 ---
 
