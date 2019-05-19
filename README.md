@@ -1,17 +1,16 @@
 # Type Hints
 
-
 Éttore Leandro Tognoli - ettore.leandro.tognoli@gmail.com
 
 ---
 
 # Éttore Leandro Tognoli
 
-## Formação 
+## Formação
 
-Bacharelado em Ciência da Computação -  UNIVEM
+Bacharelado em Ciência da Computação - UNIVEM
 
-Mestrado em Ciência da Computação -  UFSCar
+Mestrado em Ciência da Computação - UFSCar
 
 ## Experiência
 
@@ -19,52 +18,53 @@ Programador/Desenvolvedor em algumas empresas em Marília
 
 Consultor e Freelancer
 
+Pesquisador CIAg \*
 
-Pesquisador CIAg *
-
-Prof. Fatec *
+Prof. Fatec \*
 
 ---
 
 # Minha Opinião
 
-
 Não estou aqui representando o CIAg ou a FATEC
-
 
 ---
 
 # Bibliografia
 
 Clean Architecture - Robert C Martin
+
 Clean Code - Robert C Martin
-Clean Coder - Robert C Martin  ( Uncle Bob )
+
+Clean Coder - Robert C Martin ( Uncle Bob )
+
 Design Patterns - GoF
+
 Domain Drive Design - Eric Evans
-SCRUM A Arte de Fazer o Dobro do Trabalho na Metade do Tempo - Jeff Sutherland & J.J. Sutherland
+
+SCRUM A Arte de Fazer o Dobro do Trabalho na Metade do Tempo - Jeff
+Sutherland & J.J. Sutherland
+
 A Startup Enxuta - Eric Ries
 
 ---
+
 # Publico alvo
 
 O importante é estar funcionando!? =(
 
-Algo que não está funcionando posso fazer funcionar, já algo que não consigo alterar não vai me atender para sempre. 
+Algo que não está funcionando posso fazer funcionar, já algo que não consigo alterar não vai me atender para sempre.
 
 ---
 
 # Motivação
 
-Startups Pivotam, logo são necessárias metodolias ageis 
+Startups Pivotam, logo são necessárias metodolias ageis
 
-Refatoração Continua
-Tipagem facilita muito refatorações
+- Refatoração Continua ( Tipagem facilita muito refatorações )
+- Legibilidade (Tipagem contribui com a expressividade do código )
 
-Legibilidade
-Tipagem contribui com a expressividade do código
-
------
-
+---
 
 # Sobre o Tema
 
@@ -74,22 +74,22 @@ Tipagem contribui com a expressividade do código
 
 Guido van Rossum 16/04/2019
 
-
-
 https://www.techrepublic.com/article/the-creator-of-python-on-how-the-programming-language-is-learning-from-typescript/
 
------
+---
 
 # Tipagem
 
 Linguagens compiladas geralmente utilizam tipagem estatica e linguagens interpretadas geralmente utilizam tipagem dinamica.
 
 ## C/C++
+
 ```c
 int i = 1;
 ```
 
 ## Python
+
 ```
 i = 1;
 ```
@@ -99,6 +99,7 @@ i = 1;
 ```
 const i : number = 1;
 ```
+
 ---
 
 # Duck Typing
@@ -109,11 +110,9 @@ O tipo do objeto não importa, mas sim a existência de certas propriedades
 
 Os exemplos a seguir consideram tudo que faz "quack" um "pato"
 
-
 ---
 
-# Java 
-
+# Java
 
 ```java
 interface Duck {
@@ -139,7 +138,6 @@ class FakeDuck {
 ---
 
 # Java =(
-
 
 ```java
 DuckClient client = new DuckClient();
@@ -186,21 +184,25 @@ client.consumeDuck(FakeDuck()) # ok!
 
 ```typescript
 interface Duck {
-  quack: () => void
+  quack: () => void;
 }
 
 class DuckClient {
-  public consumeDuck(duck : Duck) {
+  public consumeDuck(duck: Duck) {
     duck.quack();
   }
 }
 
 class RubberDuck implements Duck {
-  public quack() { /* ... */ }
+  public quack() {
+    /* ... */
+  }
 }
 
 class FakeDuck {
-  public quack() { /* ... */ }
+  public quack() {
+    /* ... */
+  }
 }
 ```
 
@@ -213,6 +215,7 @@ const client = new DuckClient();
 client.quack(new RubberDuck()); // ok
 client.quack(new FakeDuck()); // ok!
 ```
+
 ---
 
 # PHP
@@ -246,6 +249,7 @@ $client = new DuckClient();
 $client->consumeDuck(new RubberDuck()); // ok
 $client->consumeDuck(new FakeDuck()); // ok
 ```
+
 ---
 
 # TypeHint
@@ -288,6 +292,7 @@ client.consumeDuck(FakeDuck()) # ok!
 # PHP & Interfaces
 
 Existe uma verificação em tempo de execução
+
 - Custo em tempo de execução
 - Tchau duck types
 
@@ -324,7 +329,85 @@ $client = new DuckClient();
 $client->consumeDuck(new RubberDuck()); // ok
 $client->consumeDuck(new FakeDuck()); // error =O
 ```
+
 ---
+
+# ORMs
+
+Ninguém gosta de alterar uma "tabela" e ter que alterar o código dos modelos depois das views e etc...
+
+DRY - Don't Repeat Yourself
+
+Geração de Bancos de Dados
+
+Migração de Bancos de Dados
+
+---
+
+# JPA & Hibernate
+
+```java
+import javax.persistence.*;
+
+@Entity
+@Table(name = "EMPLOYEE")
+public class Employee {
+   @Id @GeneratedValue
+   @Column(name = "id")
+   private int id;
+
+   @Column(name = "first_name")
+   private String firstName;
+
+   @Column(name = "last_name")
+   private String lastName;
+
+   @Column(name = "salary")
+   private int salary;
+
+   /** getters and setters **/
+  
+}
+```
+---
+
+# DRY & Java
+
+S2 Kotlin
+
+---
+
+# Doctrine
+
+```php
+/**
+ * @Entity
+ * @Table(name="products")
+ **/
+class Product
+{
+    /**
+    * @Id
+    * @Column(type="integer")
+    * @GeneratedValue
+    **/
+    protected $id;
+    /**
+    * @Column(type="string")
+    **/
+    protected $name;
+}
+```
+---
+
+# ORM & Tipagem
+
+A tipagem fornece meta dados importantes para os ORMs
+
+Existem ORMs que não utilizam isso, Eloquent (Laravel)
+
+---
+
 
 # Meta Programação
 
@@ -335,8 +418,9 @@ Injeção de Dependencia
 # Python Moderno
 
 Python 3.7
+
 - dataclasses
 
 Pipenv
-- lockfile
 
+- lockfile
