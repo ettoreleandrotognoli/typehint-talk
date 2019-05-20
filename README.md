@@ -55,8 +55,8 @@ Algo que não está funcionando posso fazer funcionar, já algo que não consigo
 
 Startups Pivotam, logo são necessárias metodologias ágeis
 
-- Refatoração Contínua ( Tipagem facilita muito refatorações )
 - Legibilidade (Tipagem contribui com a expressividade do código )
+- Refatoração Contínua ( Tipagem facilita muito refatorações )
 - Integração Contínua ( CI )
 - Entrega Contínua ( CD )
 
@@ -375,7 +375,7 @@ public class Employee {
 
 # DRY & Java
 
-S2 Kotlin
+![Kotlin](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin-logo.svg/512px-Kotlin-logo.svg.png)
 
 ---
 
@@ -424,7 +424,25 @@ Existe tipagem ( meta dados ) mas não são nativos da linguagem
 
 ---
 
-# Injeção de Dependencia
+# Injeção de Dependência
+
+DIP - Dependency Inversion Principle
+
+Se você não entede DIP muito provavelmente não vai entender DI
+
+---
+
+# SOLID
+
+- Single Responsability Principle
+- Open Closed Principle
+- Liskov Substitution Principle
+- Interface Segregation Principle
+- Dependency Inversion Principle
+
+---
+
+# Injeção de Dependência
 
 Muito comum no Java
 
@@ -439,12 +457,6 @@ E no python?
 # Singleton
 
 Pattern ou Anti-Pattern?
-
----
-
-
-# Injeção de Dependencia
-
 
 ---
 
