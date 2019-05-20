@@ -45,7 +45,7 @@ A Startup Enxuta - Eric Ries
 
 # Publico alvo
 
-O importante é estar funcionando!? =(
+O importante é estar funcionando?! =(
 
 Algo que não está funcionando posso fazer funcionar, já algo que não consigo alterar não vai me atender para sempre.
 
@@ -53,12 +53,12 @@ Algo que não está funcionando posso fazer funcionar, já algo que não consigo
 
 # Motivação
 
-Startups Pivotam, logo são necessárias metodolias ageis
+Startups Pivotam, logo são necessárias metodologias ágeis
 
-- Refatoração Continua ( Tipagem facilita muito refatorações )
+- Refatoração Contínua ( Tipagem facilita muito refatorações )
 - Legibilidade (Tipagem contribui com a expressividade do código )
-- Integração Continua ( CI )
-- Entregas Continuas ( CD )
+- Integração Contínua ( CI )
+- Entrega Contínua ( CD )
 
 ---
 
@@ -76,7 +76,7 @@ https://www.techrepublic.com/article/the-creator-of-python-on-how-the-programmin
 
 # Tipagem
 
-Linguagens compiladas geralmente utilizam tipagem estatica e linguagens interpretadas geralmente utilizam tipagem dinamica.
+Linguagens compiladas geralmente utilizam tipagem estática e linguagens interpretadas geralmente utilizam tipagem dinâmica.
 
 ## C/C++
 
@@ -459,7 +459,7 @@ GIT, Mercurial, SVN , JEDI
 ## Testes Automatizados
 TDD, JUnit, Selenium,
 ## Gerenciamento de Dependencias
-Gradle, Maven, Coposer, NPM, Yarn, Pipenv, Cargo
+Gradle, Maven, Composer, NPM, Yarn, Pipenv, Cargo
 
 ---
 
