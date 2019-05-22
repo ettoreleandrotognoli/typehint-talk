@@ -135,6 +135,17 @@ mudanças visando vantagem competitiva para o cliente."
 
 ---
 
+# Programador Limpo
+
+Você não treina antes de fazer uma performance? por que você não treinar antes de programar?
+
+Se você acredita que TDD é mais rápido, então você faz TDD, se não você não acredita.
+
+Existem várias pesquisas provando que com TDD é mais rápido.
+
+---
+
+
 # Código Limpo
 
 Você passa mais tempo lendo código do que escrevendo código, legibilidade importa.
@@ -189,7 +200,6 @@ Analisar código
 Sonarqube
 Codeclimate
 Codefactory
-
 
 ---
 
