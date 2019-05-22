@@ -1,4 +1,4 @@
-# Type Hints
+# Boas práticas & Metodolias Ágeis
 
 Éttore Leandro Tognoli - ettore.leandro.tognoli@gmail.com
 
@@ -27,6 +27,8 @@ Prof. Fatec \*
 # Minha Opinião
 
 Não estou aqui representando o CIAg ou a FATEC
+
+Minha opinião baseda na minha experiencia e ...
 
 ---
 
@@ -454,8 +456,6 @@ Pattern ou Anti-Pattern?
 
 # CI/CD
 
-## Versionamento de Código
-GIT, Mercurial, SVN , JEDI
 ## Testes Automatizados
 TDD, JUnit, Selenium,
 ## Gerenciamento de Dependencias
