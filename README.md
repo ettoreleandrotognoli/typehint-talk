@@ -1,4 +1,4 @@
-# Boas práticas & Metodolias Ágeis
+# Boas práticas & Metodologias Ágeis
 
 Éttore Leandro Tognoli - ettore.leandro.tognoli@gmail.com
 
@@ -24,11 +24,21 @@ Prof. Fatec \*
 
 ---
 
-# Minha Opinião
+# Público alvo
+
+Desenvolvedores, programadores, gestores... relacionado com desenvolvimento de software
+
+O importante é estar funcionando!? =(
+
+Algo que não está funcionando posso fazer funcionar, já algo que não consigo alterar não vai me atender para sempre.
+
+---
+
+# Apenas minha opinião
 
 Não estou aqui representando o CIAg ou a FATEC
 
-Minha opinião baseda na minha experiencia e ...
+Minha opinião baseda na minha experiência e ...
 
 ---
 
@@ -45,26 +55,126 @@ A Startup Enxuta - Eric Ries
 
 ---
 
-# Publico alvo
+# O que sei sobre startups?
 
-O importante é estar funcionando?! =(
+Não sei quase nada, o pouco que sei aprendi ouvindo por ai
 
-Algo que não está funcionando posso fazer funcionar, já algo que não consigo alterar não vai me atender para sempre.
+Sua ideia não vale nada, o que vale é a capacidade de implementação e como ela será feita
 
----
+["When valuing a startup, add $500k for every engineer, and subtract $250k for every MBA"](https://www.quora.com/Did-Aaron-Patzer-founder-of-Mint-start-the-saying-When-valuing-a-startup-add-500k-for-every-engineer-and-subtract-250k-for-every-MBA-%E2%80%9D)
 
-# Motivação
+Habilidade de medir o mercado e se ajustar
 
-Startups Pivotam, logo são necessárias metodologias ágeis
-
-- Legibilidade (Tipagem contribui com a expressividade do código )
-- Refatoração Contínua ( Tipagem facilita muito refatorações )
-- Integração Contínua ( CI )
-- Entrega Contínua ( CD )
+Startups pivotam
 
 ---
 
-# Sobre o Tema
+# Ciclos
+
+## Startup Enxuta
+Hipótese, Desenvolvimento, Validação da Hipótese, tudo de novo
+
+## Domain Drive Design
+Hipótese, Validação, Desenvolvimento, Feedback, tudo de novo
+
+## TDD
+Desenvolvimento do Teste, Desenvolvimento, Validação, Melhorias, tudo de novo
+
+---
+
+# Feedback Contínuo
+
+Entrega Contínua
+Refatoração Contínua
+
+---
+
+# Entrega Contínua
+
+## CI/CD
+Continuous Integration e Continuous Delivery
+
+### Controle de Versão
+GIT, SVN, Mercurial...
+
+### Testes Automatizados
+TDD, JUnit, Selenium,
+
+### Gerenciamento de Dependências
+Gradle, Maven, Coposer, NPM, Yarn, Pipenv, Cargo
+
+---
+
+# Ferramentas CI/CD
+
+Jenkins
+Gitlab Pipelines
+Travis CI
+
+S2 Docker
+
+---
+
+# Agilidade
+
+Desenvolva software e não "firmware"
+
+"Mudanças nos requisitos são bem-vindas, 
+mesmo tardiamente no desenvolvimento. 
+Processos ágeis tiram vantagem das 
+mudanças visando vantagem competitiva para o cliente."
+[Manifesto Ágil](https://agilemanifesto.org/iso/ptbr/principles.html)
+
+---
+
+# Código Limpo
+
+Você passa mais tempo lendo código do que escrevendo código, legibilidade importa.
+
+Se você sentiu necessidade de comentar seu código é porque você falhou na expressividade do seu código.
+
+---
+
+# Arquitetura Limpa
+
+Postergue o máximo possível os detalhes
+
+Banco de Dados, WEB e Frameworks são detalhes
+
+SOLID
+
+---
+
+# SOLID
+
+- Single Responsability Principle
+- Open Closed Principle
+- Liskov Substitution Principle
+- Interface Segregation Principle
+- Dependency Inversion Principle
+
+---
+
+# Padrões de Projeto
+
+Linguagem Comum ( DDD )
+
+---
+
+# Não favoreça [XHG](http://sou.gohorseprocess.com.br/extreme-go-horse-xgh/)
+
+1- Pensou, não é XGH.
+...
+16- Não tente remar contra a maré.
+
+Caso seus colegas de trabalho usam XGH para programar e você é um coxinha que gosta de fazer as coisas certinhas, esqueça! Pra cada Design Pattern que você usa corretamente, seus colegas gerarão 10 vezes mais código podre usando XGH.
+
+[Net Negative Producing Programmer](http://www.akitaonrails.com/2009/03/30/off-topic-net-negative-producing-programmer)
+
+
+---
+
+# Sobre o Tema Inicial
 
 "I found TypeScript is actually incredibly useful, so we're adding a similar idea to Python, we're adding it in a slightly different way because we have different context," he said.
 
@@ -415,39 +525,21 @@ Existem ORMs que não utilizam isso, Eloquent (Laravel)
 # Django ORM
 
 ```python
-
 class Band(models.Model):
     name = models.CharField(max_length=200)
     can_rock = models.BooleanField(default=True)
-
 ```
 
 Existe tipagem ( meta dados ) mas não são nativos da linguagem
 
 ---
 
-# Injeção de Dependência
+# Injeção de Dependencia
 
 DIP - Dependency Inversion Principle
-
 Se você não entede DIP muito provavelmente não vai entender DI
 
----
-
-# SOLID
-
-- Single Responsability Principle
-- Open Closed Principle
-- Liskov Substitution Principle
-- Interface Segregation Principle
-- Dependency Inversion Principle
-
----
-
-# Injeção de Dependência
-
 Muito comum no Java
-
 No PHP com Laravel também é muito utilizado
 
 Angular 1 com JS, demais com TypeScript
@@ -466,27 +558,6 @@ Pattern ou Anti-Pattern?
 
 ---
 
-# CI/CD
-
-## Testes Automatizados
-TDD, JUnit, Selenium,
-## Gerenciamento de Dependencias
-Gradle, Maven, Composer, NPM, Yarn, Pipenv, Cargo
-
----
-
-# Ferramentas CI/CD
-
-Jenkins
-Gitlab Pipelines
-Travis CI
-
-Circle CI
-
-S2 Docker
-
----
-
 # Python Moderno
 
 Python 3.7
@@ -496,11 +567,5 @@ Python 3.7
 Pipenv
 
 - lockfile
-
----
-
-# Para os Gerentes
-
-http://www.akitaonrails.com/2009/03/30/off-topic-net-negative-producing-programmer
 
 ---
