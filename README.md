@@ -1,8 +1,16 @@
+---
+marp: true
+---
+
 # Boas práticas & Metodologias Ágeis
 
 Éttore Leandro Tognoli - ettore.leandro.tognoli@gmail.com
 
+Powered by [Marp](https://yhatt.github.io/marp/)
+
 ---
+
+<!-- paginate: true -->
 
 # Éttore Leandro Tognoli
 
@@ -18,9 +26,9 @@ Programador/Desenvolvedor em algumas empresas em Marília
 
 Consultor e Freelancer
 
-Pesquisador CIAg \*
+Pesquisador Tecnológico - CIAg \*
 
-Prof. Fatec \*
+Professor do curso de BigData no Agronegócio - FATEC \*
 
 ---
 
@@ -61,7 +69,7 @@ Não sei quase nada, o pouco que sei aprendi ouvindo por ai
 
 Sua ideia não vale nada, o que vale é a capacidade de implementação e como ela será feita
 
-["When valuing a startup, add $500k for every engineer, and subtract $250k for every MBA"](https://www.quora.com/Did-Aaron-Patzer-founder-of-Mint-start-the-saying-When-valuing-a-startup-add-500k-for-every-engineer-and-subtract-250k-for-every-MBA-%E2%80%9D)
+["When valuing a startup, add $500k for every engineer, and subtract $250k for every MBA" Aaron Patzer, founder of Mint](https://www.quora.com/Did-Aaron-Patzer-founder-of-Mint-start-the-saying-When-valuing-a-startup-add-500k-for-every-engineer-and-subtract-250k-for-every-MBA-%E2%80%9D)
 
 Habilidade de medir o mercado e se ajustar
 
@@ -91,7 +99,7 @@ Refatoração Contínua
 
 # Entrega Contínua
 
-## CI/CD
+### CI/CD
 Continuous Integration e Continuous Delivery
 
 ### Controle de Versão
@@ -111,7 +119,7 @@ Jenkins
 Gitlab Pipelines
 Travis CI
 
-S2 Docker
+:heart: Docker
 
 ---
 
@@ -171,6 +179,17 @@ Caso seus colegas de trabalho usam XGH para programar e você é um coxinha que 
 
 [Net Negative Producing Programmer](http://www.akitaonrails.com/2009/03/30/off-topic-net-negative-producing-programmer)
 
+---
+
+# Métricas de qualidade
+
+Medir cobertura dos testes
+Analisar código
+
+Sonarqube
+Codeclimate
+Codefactory
+
 
 ---
 
@@ -190,20 +209,17 @@ https://www.techrepublic.com/article/the-creator-of-python-on-how-the-programmin
 
 Linguagens compiladas geralmente utilizam tipagem estática e linguagens interpretadas geralmente utilizam tipagem dinâmica.
 
-## C/C++
-
+### C/C++
 ```c
 int i = 1;
 ```
 
-## Python
-
+### Python
 ```
 i = 1;
 ```
 
-## TypeScript
-
+### TypeScript
 ```
 const i : number = 1;
 ```
@@ -569,3 +585,11 @@ Pipenv
 - lockfile
 
 ---
+
+# FIM
+
+Éttore Leandro Tognoli - ettore.leandro.tognoli@gmail.com
+
+https://github.com/ettoreleandrotognoli
+
+Obrigado!
