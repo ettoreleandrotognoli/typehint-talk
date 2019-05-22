@@ -47,7 +47,7 @@ A Startup Enxuta - Eric Ries
 
 # Publico alvo
 
-O importante é estar funcionando!? =(
+O importante é estar funcionando?! =(
 
 Algo que não está funcionando posso fazer funcionar, já algo que não consigo alterar não vai me atender para sempre.
 
@@ -55,12 +55,12 @@ Algo que não está funcionando posso fazer funcionar, já algo que não consigo
 
 # Motivação
 
-Startups Pivotam, logo são necessárias metodolias ageis
+Startups Pivotam, logo são necessárias metodologias ágeis
 
-- Refatoração Continua ( Tipagem facilita muito refatorações )
 - Legibilidade (Tipagem contribui com a expressividade do código )
-- Integração Continua ( CI )
-- Entregas Continuas ( CD )
+- Refatoração Contínua ( Tipagem facilita muito refatorações )
+- Integração Contínua ( CI )
+- Entrega Contínua ( CD )
 
 ---
 
@@ -78,7 +78,7 @@ https://www.techrepublic.com/article/the-creator-of-python-on-how-the-programmin
 
 # Tipagem
 
-Linguagens compiladas geralmente utilizam tipagem estatica e linguagens interpretadas geralmente utilizam tipagem dinamica.
+Linguagens compiladas geralmente utilizam tipagem estática e linguagens interpretadas geralmente utilizam tipagem dinâmica.
 
 ## C/C++
 
@@ -377,7 +377,7 @@ public class Employee {
 
 # DRY & Java
 
-S2 Kotlin
+![Kotlin](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin-logo.svg/512px-Kotlin-logo.svg.png)
 
 ---
 
@@ -426,7 +426,25 @@ Existe tipagem ( meta dados ) mas não são nativos da linguagem
 
 ---
 
-# Injeção de Dependencia
+# Injeção de Dependência
+
+DIP - Dependency Inversion Principle
+
+Se você não entede DIP muito provavelmente não vai entender DI
+
+---
+
+# SOLID
+
+- Single Responsability Principle
+- Open Closed Principle
+- Liskov Substitution Principle
+- Interface Segregation Principle
+- Dependency Inversion Principle
+
+---
+
+# Injeção de Dependência
 
 Muito comum no Java
 
@@ -444,12 +462,6 @@ Pattern ou Anti-Pattern?
 
 ---
 
-
-# Injeção de Dependencia
-
-
----
-
 # Meta Programação
 
 ---
@@ -459,7 +471,7 @@ Pattern ou Anti-Pattern?
 ## Testes Automatizados
 TDD, JUnit, Selenium,
 ## Gerenciamento de Dependencias
-Gradle, Maven, Coposer, NPM, Yarn, Pipenv, Cargo
+Gradle, Maven, Composer, NPM, Yarn, Pipenv, Cargo
 
 ---
 
