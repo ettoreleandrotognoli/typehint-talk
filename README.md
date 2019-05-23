@@ -2,7 +2,7 @@
 marp: true
 ---
 
-# Boas práticas & Metodologias Ágeis
+# Boas Práticas para Metodologias Ágeis
 
 Éttore Leandro Tognoli - ettore.leandro.tognoli@gmail.com
 
