@@ -36,7 +36,7 @@ Professor do curso de BigData no Agronegócio - FATEC \*
 
 Desenvolvedores, programadores, gestores... relacionado com desenvolvimento de software
 
-O importante é estar funcionando!? =(
+O importante é estar funcionando!? :disappointed:
 
 Algo que não está funcionando posso fazer funcionar, já algo que não consigo alterar não vai me atender para sempre.
 
@@ -94,6 +94,7 @@ Desenvolvimento do Teste, Desenvolvimento, Validação, Melhorias, tudo de novo
 
 Entrega Contínua
 Refatoração Contínua
+Melhoria Contínua
 
 ---
 
@@ -105,11 +106,11 @@ Continuous Integration e Continuous Delivery
 ### Controle de Versão
 GIT, SVN, Mercurial...
 
-### Testes Automatizados
-TDD, JUnit, Selenium,
-
 ### Gerenciamento de Dependências
 Gradle, Maven, Coposer, NPM, Yarn, Pipenv, Cargo
+
+### Testes Automatizados
+TDD, JUnit, Selenium,
 
 ---
 
@@ -123,15 +124,23 @@ Travis CI
 
 ---
 
-# Agilidade
+# Desenvolvimento Incremental
 
-Desenvolva software e não "firmware"
+Entregas frequentes que agregam valor
 
 "Mudanças nos requisitos são bem-vindas, 
 mesmo tardiamente no desenvolvimento. 
 Processos ágeis tiram vantagem das 
 mudanças visando vantagem competitiva para o cliente."
 [Manifesto Ágil](https://agilemanifesto.org/iso/ptbr/principles.html)
+
+---
+
+# Agilidade
+
+Desenvolva software e não "firmware"
+
+Expansível, testavel e reconfigurável
 
 ---
 
@@ -176,6 +185,7 @@ SOLID
 
 # Padrões de Projeto
 
+Soluções versáteis para problemas genéricos
 Linguagem Comum ( DDD )
 
 ---
@@ -197,9 +207,13 @@ Caso seus colegas de trabalho usam XGH para programar e você é um coxinha que 
 Medir cobertura dos testes
 Analisar código
 
-Sonarqube
-Codeclimate
-Codefactory
+
+### Ferramentas
+- [Sonarqube](https://www.sonarqube.org/)
+- [Codeclimate](https://codeclimate.com/)
+- [Codefactor](https://www.codefactor.io/)
+
+![](https://travis-ci.org/ettoreleandrotognoli/python-cdi.svg?branch=master) ![](https://codecov.io/gh/ettoreleandrotognoli/python-cdi/branch/master/graph/badge.svg) ![](https://api.codeclimate.com/v1/badges/b17d7c12edab60606f4c/maintainability) ![](https://www.codefactor.io/repository/github/ettoreleandrotognoli/python-cdi/badge)
 
 ---
 
@@ -217,7 +231,7 @@ https://www.techrepublic.com/article/the-creator-of-python-on-how-the-programmin
 
 # Tipagem
 
-Linguagens compiladas geralmente utilizam tipagem estática e linguagens interpretadas geralmente utilizam tipagem dinâmica.
+Linguagens compiladas geralmente utilizam tipagem estática e linguagens interpretadas geralmente utilizam tipagem dinâmica
 
 ### C/C++
 ```c
@@ -226,7 +240,7 @@ int i = 1;
 
 ### Python
 ```
-i = 1;
+i = 1
 ```
 
 ### TypeScript
@@ -511,7 +525,7 @@ public class Employee {
 ```
 ---
 
-# DRY & Java
+# DRY - Kotlin >  Java
 
 ![Kotlin](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin-logo.svg/512px-Kotlin-logo.svg.png)
 
@@ -551,16 +565,18 @@ Existem ORMs que não utilizam isso, Eloquent (Laravel)
 # Django ORM
 
 ```python
+from django.db import models
+
 class Band(models.Model):
     name = models.CharField(max_length=200)
     can_rock = models.BooleanField(default=True)
 ```
 
-Existe tipagem ( meta dados ) mas não são nativos da linguagem
+Existe tipagem ( meta dados ) mas não é nativa da linguagem
 
 ---
 
-# Injeção de Dependencia
+# Injeção de Dependência
 
 DIP - Dependency Inversion Principle
 Se você não entede DIP muito provavelmente não vai entender DI
@@ -574,25 +590,87 @@ E no python?
 
 ---
 
+# DI & Laravel
+
+```php
+namespace App\Http\Controllers;
+
+use App\User;
+use App\Repositories\UserRepository;
+use App\Http\Controllers\Controller;
+
+class UserController extends Controller{
+    protected $users;
+
+    public function __construct(UserRepository $users){
+        $this->users = $users;
+    }
+
+    public function show($id){
+        $user = $this->users->find($id);
+        return view('user.profile', ['user' => $user]);
+    }
+}
+```
+---
+
+# DI & Spring
+
+```kotlin
+
+@Component
+class MyComponent(
+  private val someService: SomeService
+){
+  /* ... */
+}
+
+```
+
+----
+
+# DI & Angular
+
+```typescript
+@Component({
+  template: `...`
+})
+export class MyComponent {
+  constructor(
+    private someService : SomeService
+  ){
+    /* ... */
+  }
+}
+```
+---
+
+# DI & Python
+
+Infelizmente não foi popularmente adotado, mas talvez isso mude com as tipagens opicionais
+
+
+---
+
 # Singleton
 
 Pattern ou Anti-Pattern?
 
----
+```java
+class Singleton {
+  private static Singleton INSTANCE = null;
+  private Singleton(){}
 
-# Meta Programação
+  public Singleton getInstance() {
+    if(this.INSTANCE != null){
+      return this.INSTANCE;
+    }
+    this.INSTANCE = new Singleton();
+    return this.INSTANCE;
+  }
 
----
-
-# Python Moderno
-
-Python 3.7
-
-- dataclasses
-
-Pipenv
-
-- lockfile
+}
+```
 
 ---
 
