@@ -400,12 +400,12 @@ $client->consumeDuck(new FakeDuck()); // ok
 
 ---
 
-# TypeHint
+# Type hints
 
 Dicas sobre o tipo
 Tipagem Opcional
 
-
+Verificação em tempo de compilação
 [Mypy](http://mypy-lang.org/)
 
 ---
@@ -445,9 +445,9 @@ client.consumeDuck(FakeDuck()) # ok!
 
 # PHP & Interfaces
 
-Existe uma verificação em tempo de execução
+Verificação em runtime
 
-- Custo em tempo de execução
+- Custo durante execução
 - Tchau duck types
 
 ---
@@ -581,13 +581,6 @@ Existe tipagem ( meta dados ) mas não é nativa da linguagem
 DIP - Dependency Inversion Principle
 Se você não entede DIP muito provavelmente não vai entender DI
 
-Muito comum no Java
-No PHP com Laravel também é muito utilizado
-
-Angular 1 com JS, demais com TypeScript
-
-E no python?
-
 ---
 
 # DI & Laravel
@@ -671,6 +664,15 @@ class Singleton {
 
 }
 ```
+---
+
+# Legibilidade & Refatoração
+
+Os tipos deixam explícitas algumas intenções
+
+Use as ferramentas disponíveis a seu favor
+
+ctrl+h nem sempre da certo
 
 ---
 
