@@ -6,7 +6,8 @@ marp: true
 <!-- _backgroundImage: url(./link.svg) -->
 <!-- _backgroundSize: cover -->
 
-Éttore Leandro Tognoli - ettore.leandro.tognoli@gmail.com
+Éttore Leandro Tognoli
+ettore.leandro.tognoli@gmail.com
 
 Pesquisador Tecnológico - CIAg 
 Professor do curso de BigData no Agronegócio - FATEC
@@ -40,6 +41,9 @@ Desenvolvedores, programadores, gestores... relacionado com desenvolvimento de s
 O importante é estar funcionando!? :disappointed:
 
 Algo que não está funcionando posso fazer funcionar, já algo que não consigo alterar não vai me atender para sempre.
+
+*"Software funcionando é a medida primária de progresso."* [Manifesto Ágil](https://agilemanifesto.org/iso/ptbr/principles.html)
+
 
 ---
 
@@ -97,6 +101,10 @@ Entrega Contínua
 Refatoração Contínua
 Melhoria Contínua
 
+*"Em intervalos regulares, a equipe reflete sobre como 
+se tornar mais eficaz e então refina e ajusta seu 
+comportamento de acordo."* [Manifesto Ágil](https://agilemanifesto.org/iso/ptbr/principles.html)
+
 ---
 
 # Entrega Contínua
@@ -129,11 +137,10 @@ Travis CI
 
 Entregas frequentes que agregam valor
 
-"Mudanças nos requisitos são bem-vindas, 
+*"Mudanças nos requisitos são bem-vindas, 
 mesmo tardiamente no desenvolvimento. 
 Processos ágeis tiram vantagem das 
-mudanças visando vantagem competitiva para o cliente."
-[Manifesto Ágil](https://agilemanifesto.org/iso/ptbr/principles.html)
+mudanças visando vantagem competitiva para o cliente."* [Manifesto Ágil](https://agilemanifesto.org/iso/ptbr/principles.html)
 
 ---
 
@@ -142,6 +149,9 @@ mudanças visando vantagem competitiva para o cliente."
 Desenvolva software e não "firmware"
 
 Expansível, testavel e reconfigurável
+
+*"Contínua atenção à excelência técnica e bom design 
+aumenta a agilidade."* [Manifesto Ágil](https://agilemanifesto.org/iso/ptbr/principles.html)
 
 ---
 
@@ -617,7 +627,7 @@ class UserController extends Controller{
 ```
 ---
 
-# DI & Spring
+# DI & Kotlin + Spring
 
 ```kotlin
 
@@ -680,9 +690,7 @@ class Singleton {
 
 Os tipos deixam explícitas algumas intenções
 
-Use as ferramentas disponíveis a seu favor
-
-ctrl+h nem sempre da certo
+Use as ferramentas disponíveis a seu favor, refatoração ( *ctrl+h nem sempre da certo* ), verificação estática
 
 ---
 
@@ -691,8 +699,8 @@ ctrl+h nem sempre da certo
 <!-- _backgroundImage: url(./link.svg) -->
 <!-- _backgroundSize: contain -->
 
-Éttore Leandro Tognoli - ettore.leandro.tognoli@gmail.com
-
+Éttore Leandro Tognoli
+ettore.leandro.tognoli@gmail.com
 https://github.com/ettoreleandrotognoli
 
 Obrigado!
