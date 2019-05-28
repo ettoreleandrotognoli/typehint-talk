@@ -660,7 +660,7 @@ export class MyComponent {
 
 # DI & Python
 
-Infelizmente não foi popularmente adotado, mas talvez isso mude com as tipagens opicionais
+Infelizmente não foi popularmente adotado, mas talvez isso mude com as tipagens opcionais
 
 
 ---
