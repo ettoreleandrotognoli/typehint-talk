@@ -3,8 +3,13 @@ marp: true
 ---
 
 # Boas Práticas para Metodologias Ágeis
+<!-- _backgroundImage: url(./link.svg) -->
+<!-- _backgroundSize: cover -->
 
 Éttore Leandro Tognoli - ettore.leandro.tognoli@gmail.com
+
+Pesquisador Tecnológico - CIAg 
+Professor do curso de BigData no Agronegócio - FATEC
 
 Powered by [Marp](https://yhatt.github.io/marp/)
 
@@ -24,11 +29,7 @@ Mestrado em Ciência da Computação - UFSCar
 
 Programador/Desenvolvedor em algumas empresas em Marília
 
-Consultor e Freelancer
-
-Pesquisador Tecnológico - CIAg \*
-
-Professor do curso de BigData no Agronegócio - FATEC \*
+Consultor e Programador Freelancer
 
 ---
 
@@ -165,6 +166,8 @@ Se você sentiu necessidade de comentar seu código é porque você falhou na ex
 
 # Arquitetura Limpa
 
+O software tem dois valores, comportamento e estrutura.
+
 Postergue o máximo possível os detalhes
 
 Banco de Dados, WEB e Frameworks são detalhes
@@ -214,6 +217,13 @@ Analisar código
 - [Codefactor](https://www.codefactor.io/)
 
 ![](https://travis-ci.org/ettoreleandrotognoli/python-cdi.svg?branch=master) ![](https://codecov.io/gh/ettoreleandrotognoli/python-cdi/branch/master/graph/badge.svg) ![](https://api.codeclimate.com/v1/badges/b17d7c12edab60606f4c/maintainability) ![](https://www.codefactor.io/repository/github/ettoreleandrotognoli/python-cdi/badge)
+
+---
+
+# Um Pouco do Sonarqube
+
+[Sonarcloud](https://sonarcloud.io/)
+[Infra Privada](https://sonarqube.arcamo.com.br:8443)
 
 ---
 
@@ -405,7 +415,7 @@ $client->consumeDuck(new FakeDuck()); // ok
 Dicas sobre o tipo
 Tipagem Opcional
 
-Verificação em tempo de compilação
+Verificação em tempo de "compilação"
 [Mypy](http://mypy-lang.org/)
 
 ---
@@ -677,6 +687,9 @@ ctrl+h nem sempre da certo
 ---
 
 # FIM
+
+<!-- _backgroundImage: url(./link.svg) -->
+<!-- _backgroundSize: contain -->
 
 Éttore Leandro Tognoli - ettore.leandro.tognoli@gmail.com
 
