@@ -12,7 +12,7 @@ ettore.leandro.tognoli@gmail.com
 Pesquisador Tecnológico - CIAg 
 Professor do curso de BigData no Agronegócio - FATEC
 
-Powered by [Marp](https://yhatt.github.io/marp/)
+Powered by [Marp](https://yhatt.github.io/marp/) & Bárbara
 
 ---
 
@@ -36,7 +36,7 @@ Consultor e Programador Freelancer
 
 # Público alvo
 
-Desenvolvedores, programadores, gestores... relacionado com desenvolvimento de software
+Desenvolvedores, programadores, gestores, demais profissionais  relacionados com desenvolvimento de software
 
 O importante é estar funcionando!? :disappointed:
 
@@ -51,7 +51,7 @@ Algo que não está funcionando posso fazer funcionar, já algo que não consigo
 
 Não estou aqui representando o CIAg ou a FATEC
 
-Minha opinião baseda na minha experiência e ...
+Minha opinião baseda na minha experiência e na experiência de alguns grandes nomes.
 
 ---
 
@@ -70,8 +70,6 @@ A Startup Enxuta - Eric Ries
 
 # O que sei sobre startups?
 
-Não sei quase nada, o pouco que sei aprendi ouvindo por ai
-
 Sua ideia não vale nada, o que vale é a capacidade de implementação e como ela será feita
 
 ["When valuing a startup, add $500k for every engineer, and subtract $250k for every MBA" Aaron Patzer, founder of Mint](https://www.quora.com/Did-Aaron-Patzer-founder-of-Mint-start-the-saying-When-valuing-a-startup-add-500k-for-every-engineer-and-subtract-250k-for-every-MBA-%E2%80%9D)
@@ -87,7 +85,7 @@ Startups pivotam
 ## Startup Enxuta
 Hipótese, Desenvolvimento, Validação da Hipótese, tudo de novo
 
-## Domain Drive Design
+## Domain Driven Design
 Hipótese, Validação, Desenvolvimento, Feedback, tudo de novo
 
 ## TDD
@@ -125,6 +123,8 @@ TDD, JUnit, Selenium,
 
 # Ferramentas CI/CD
 
+Quanto tempo você gasta com deploy?
+
 Jenkins
 Gitlab Pipelines
 Travis CI
@@ -148,18 +148,20 @@ mudanças visando vantagem competitiva para o cliente."* [Manifesto Ágil](https
 
 Desenvolva software e não "firmware"
 
-Expansível, testavel e reconfigurável
+Expansível, testável e reconfigurável
 
 *"Contínua atenção à excelência técnica e bom design 
 aumenta a agilidade."* [Manifesto Ágil](https://agilemanifesto.org/iso/ptbr/principles.html)
+
+Evite dívidas técnicas
 
 ---
 
 # Programador Limpo
 
-Você não treina antes de fazer uma performance? por que você não treinar antes de programar?
+Você não treina antes de fazer uma performance? por que não treinar antes de programar?
 
-Se você acredita que TDD é mais rápido, então você faz TDD, se não você não acredita.
+Se você acredita que TDD é mais rápido, então você faz TDD.
 
 Existem várias pesquisas provando que com TDD é mais rápido.
 
@@ -203,13 +205,13 @@ Linguagem Comum ( DDD )
 
 ---
 
-# Não favoreça [XHG](http://sou.gohorseprocess.com.br/extreme-go-horse-xgh/)
+# Não favoreça [XGH](http://sou.gohorseprocess.com.br/extreme-go-horse-xgh/)
 
 1- Pensou, não é XGH.
 ...
 16- Não tente remar contra a maré.
 
-Caso seus colegas de trabalho usam XGH para programar e você é um coxinha que gosta de fazer as coisas certinhas, esqueça! Pra cada Design Pattern que você usa corretamente, seus colegas gerarão 10 vezes mais código podre usando XGH.
+Caso seus colegas de trabalho usem XGH para programar e você é um coxinha que gosta de fazer as coisas certinhas, esqueça! Pra cada Design Pattern que você usa corretamente, seus colegas gerarão 10 vezes mais código podre usando XGH.
 
 [Net Negative Producing Programmer](http://www.akitaonrails.com/2009/03/30/off-topic-net-negative-producing-programmer)
 
@@ -576,7 +578,7 @@ class Product
 
 # ORM & Tipagem
 
-A tipagem fornece meta dados importantes para os ORMs
+A tipagem fornece metadados importantes para os ORMs
 
 Existem ORMs que não utilizam isso, Eloquent (Laravel)
 
@@ -592,7 +594,7 @@ class Band(models.Model):
     can_rock = models.BooleanField(default=True)
 ```
 
-Existe tipagem ( meta dados ) mas não é nativa da linguagem
+Existe tipagem ( metadados ) mas não é nativa da linguagem
 
 ---
 
@@ -690,7 +692,7 @@ class Singleton {
 
 Os tipos deixam explícitas algumas intenções
 
-Use as ferramentas disponíveis a seu favor, refatoração ( *ctrl+h nem sempre da certo* ), verificação estática
+Use as ferramentas disponíveis a seu favor, refatoração ( *ctrl+h nem sempre dá certo* ), verificação estática
 
 ---
 
