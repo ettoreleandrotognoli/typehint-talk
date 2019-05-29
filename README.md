@@ -146,14 +146,19 @@ mudanças visando vantagem competitiva para o cliente."* [Manifesto Ágil](https
 
 # Agilidade
 
-Desenvolva software e não "firmware"
-
+Desenvolva software e não "firmware".
 Expansível, testável e reconfigurável
+
+Evite dívidas técnicas
 
 *"Contínua atenção à excelência técnica e bom design 
 aumenta a agilidade."* [Manifesto Ágil](https://agilemanifesto.org/iso/ptbr/principles.html)
 
-Evite dívidas técnicas
+
+*"Os processos ágeis promovem desenvolvimento 
+sustentável. Os patrocinadores, desenvolvedores e 
+usuários devem ser capazes de manter um ritmo 
+constante indefinidamente."* [Manifesto Ágil](https://agilemanifesto.org/iso/ptbr/principles.html)
 
 ---
 
