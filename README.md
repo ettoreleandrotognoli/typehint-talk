@@ -12,7 +12,7 @@ ettore.leandro.tognoli@gmail.com
 Pesquisador Tecnológico - CIAg 
 Professor do curso de BigData no Agronegócio - FATEC
 
-Powered by [Marp](https://yhatt.github.io/marp/) & Bárbara
+Powered by [Marp](https://yhatt.github.io/marp/)
 
 ---
 
